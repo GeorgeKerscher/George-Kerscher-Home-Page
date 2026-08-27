@@ -1,0 +1,488 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+ <html>
+ <head>
+ <title>
+ Structured Text, the Key to Information Now and in the Future
+ </title>
+ </head>
+ 
+ <body>
+ 
+ <h1>Structured Text, the Key to Information Now and in the
+ Future</h1>
+ 
+ <p>Author: <i><a
+ href="http://www.montana.com/kerscher/index.htm">George Kerscher
+ </a></i>,Research Fellow<br>
+ Recording For the Blind &amp; Dyslexic (RFB&amp;D)<br>
+ Email: kerscher@montana.com
+ 
+ 
+ <p>
+ <b>for presentation at:<br>
+ IFLA Conference August 28, 1997<br>
+ Copenhagen, Denmark</b>
+ 
+ 
+ 
+ <h1>Abstract</h1>
+ <p>
+ If we are to use information successfully, the information must be
+ structured in a way that permits us to find what we want and then
+ to read the information effectively. This paper will briefly
+ describe early use of electronic text to provide information.
+ Secondly, the advantages of using text structuring techniques will
+ be shown.  Finally, use of HTML to structure electronic text and
+ audio recordings will be discussed. Overall, this paper will
+ describe possible directions the Internet may take and how
+ libraries for the blind and print disabled can take advantage of
+ these developments.
+ 
+ <h1>How the first ASCII E-Text books were structured</h1>
+ <p>
+ The first ASCII books were very simple. They contained no &quot;mark up&quot;
+ or &quot;tags&quot; and used only ad hoc conventions to identify different
+ book elements. Each chapter was a separate file with extra files
+ for the front matter, the table of contents, and the index.
+ Headings and paragraphs were surrounded by two hard returns which
+ are displayed as blank lines. E-Text books in this form were easy
+ to produce and easy to use, but there were some major problems:
+ 
+ <ul>
+ <li>Moving from heading to heading within a chapter is 
+  difficult.
+ <li>Going to a certain page is not dependable.
+ <li>Searching for something in the book involves searching many
+ different files.
+ <li> Moving from an index entry to the referenced page is
+ difficult.  One would first go to the index and find the item and
+ the page number. The next step is to figure out which chapter the
+ page is in by opening the table of contents file and identifying
+ the correct chapter. Finally one would open that chapter and then
+ try to find the page. This involved at least four steps -- beyond
+ what most people would tolerate.
+ 
+ </ul>
+ <p>
+ Nevertheless ASCII books are widely acclaimed for their utility in
+ the blind community. If you ask a person who is blind how they
+ would like a book, most will say ASCII. Why? Most people understand
+ what ASCII is and it is likely the person will get something they
+ can use. ASCII books are the most basic form of accessible
+ electronic information and most people know how to use them.
+ 
+ <h1>Different types of structures</h1>
+ <p>
+ It is clear that ASCII books cannot adequately describe the wide
+ range of materials we use. First the character set is much too 
+ limited. The available characters should be able to represent all
+ romance languages and then go beyond to the Asian languages. This
+ requires what are known as &quot;double byte&quot; character sets, because it
+ takes two bytes -- 16 bits -- to identify the various characters.
+ Even the current double byte systems need further extension. In
+ addition, books require structural elements such as headings, page
+ numbers, list items, and tables need to be unambiguously defined.
+ 
+ <h2>Textbooks</h2>
+ <p>
+ For textbooks to be more useful, some very simple text elements
+ need to be identified. These text elements give the reader better
+ search and navigation capabilities. These basic elements are:
+ 
+ <ul>
+ <li>major and minor headings
+ <li>page numbers
+ <li>paragraphs
+ <li>lists
+ <li>figures
+ <li>tables
+ <li>pre-formatted text
+ </ul>
+ <h2>Dictionaries</h2>
+ <p>
+ Dictionaries are structured quite differently from textbooks. The
+ following elements need to be identified:
+ 
+ <ul>
+ <li>lexical element (key terms)
+ <li>pronunciation element
+ <li>derivation element
+ <li>grammatical element (part of speech)
+ <li>morphological unit (prefixes and suffixes)
+ <li>semantic element (the definitions)
+ </ul>
+ <p>
+ Many times we find that the components used in producing
+ dictionaries are needed in other books. The glossary of terms, for
+ example resembles a dictionary in its structure.
+ 
+ 
+ <h2>Cookery Books</h2>
+ <p>
+ While in most cases the elements identified in textbooks and
+ dictionaries can be used to produce a cookery book, there are a few
+ elements which may prove to be useful. For example, a person may
+ which to search for a &quot;main dish&quot; which uses &quot;beef.&quot; having the
+ category identified and the ingredients would make the searching
+ easy.
+ 
+ 
+ <h1>Using SGML to describe the structures</h1>
+ <p>
+ As mentioned above, ASCII does not provide a mechanism for
+ representing the characters used in various languages and it does
+ not provide mechanisms for identifying the elements needed for
+ textbooks, dictionaries, cookery books, and other types of texts
+ needed by a person with a print disability. Fortunately there is
+ already a international standard that meets all these requirements.
+ Standard Generalized Markup Language (SGML) ISO 8879 can accomplish
+ all of the requirements mentioned above.
+ 
+ 
+ <p>
+ Several years ago RFB&amp;D started using the simple ICADD application
+ of SGML in our E-Text production process. The International
+ Committee for Accessible Document Design (ICADD) had created an
+ SGML Document Type Definition (DTD) (ICADD22.DTD).  Once the data
+ is in a SGML DTD, many tools can be used to transform the
+ information. BookManager is one such tool that has been used at
+ RFB&amp;D. This search and retrieval tool organizes the book into a
+ single file with sophisticated search and navigation options. 
+ Currently RFB&amp;D is using a product called &quot;SGML Build&quot; which
+ creates the BookManager book from an SGML input stream. RFB&amp;D makes
+ both an ASCII version and a BookManager version from the same ICADD
+ (SGML) input stream. We can offer our members the ASCII or
+ BookManager version; whatever they are most comfortable with.
+ 
+ <p>
+ I have been talking about SGML for the past seven years and many of
+ you already have heard me talk about the importance of SGML in
+ making documents accessible. Now, the most important version of
+ SGML in the world is evolving as a result of the huge growth of the
+ Internet and the World Wide Web (WWW). Yes, I'll say it again,
+ &quot;Hyper Text Markup Language (HTML) is an application of SGML and is
+ the language of the Web.&quot;
+ 
+ 
+ <h1>The World Wide Web's use of SGML, called HTML</h1>
+ 
+ <p>
+ HTML and the web started off using SGML tags indiscriminately.
+ There was little planning -- it just started. It was not long
+ before the web became chaotic. Tags were being invented and few of
+ the developers had a background in SGML nor did they really
+ understand structured documents. They just created a tag and then
+ displayed the information with a certain &quot;look.&quot; At this early
+ stage, the developers of the web organized under the &quot;World Wide
+ Web Consortium&quot; known as the W3C. (You can visit their web site at:
+ http://www.w3.org.) At this point the W3C made the decision to
+ formalize HTML as an application of SGML. HTML 2.0 was the first
+ version of HTML to conform to the SGML specification. Currently,
+ HTML 3.2 is the formal recommendation; HTML 4.0 is in draft status
+ and will probably be recommended by the end of this year.
+ 
+ 
+ <p>
+ The web and the print disabled community are still plagued by HTML
+ starting in such an ad hoc manner. Developers of Mosaic and later
+ Netscape and Microsoft's Internet Explorer confused
+ <b>structure</b> and <b>appearance</b>. This is very important to
+ understanding the complex problems facing persons using the
+ internet who cannot see the screen. The <b>correct</b> way to
+ create HTML and SGML is to separate structure and the appearance of
+ the information. The information should be format and appearance
+ independent. The rapid development of the web and the &quot;get ahead&quot;
+ attitude caused careful design to be thrown out the window. The W3C
+ is trying to correct these problems, but it remains to be seen if
+ the faults will be corrected.
+ 
+ <h2>Style Sheets -- Separating Appearance from Structure and
+ Content</h2>
+ 
+ <p>
+ The nature of information is format independent. Information can be
+ printed on paper, displayed on a screen, recorded by a human,
+ printed in braille, and many other formats some of which are yet to
+ be invented. The information itself does not depend on the format.
+ Once one accepts this principal, it's easy to understand the
+ direction the web should take. Fortunately the W3C understands this
+ and has developed &quot;Cascading Style Sheets&quot; (CSS to deliver
+ information in a variety of possible formats through the web.
+ 
+ 
+ <p>
+ Simply put, Cascading Style Sheets are a place to put formatting
+ information. This formatting information is separate from the
+ structure and content of the web pages. the W3C call these style
+ sheets cascading to indicate three layers of possible style sources
+ of formatting:
+ <ol>
+ <li>Authors defined styles
+ <li>Browsers defined styles (default)
+ <li>Users defined styles
+ </ol>
+ 
+ <h2>Audio Cascading Style Sheets (ACSS)</h2>
+ 
+ <p>
+ While visual formatting for on screen display is how most people
+ conceptualize information, information can be presented in auditory
+ forms. the HTML 3.2 specification defines Audio Cascading Style
+ Sheets (ACSS) for presenting audio information. Like standard CSS
+ information the ACSS formats the information using &quot;audio
+ formatting.&quot; The first application of this was for persons who are
+ blind, but it is becoming clear that this feature will benefit many
+ others. ACSS is important for:
+ 
+ <ul>
+ <li>Eyes busy use -- For example while driving a car. Some of the
+ latest BMW's come with a web browser. Unfortunately, at this time
+ these do not use audio output as the user interface.
+ <li>Nomadic web browsing -- Web technologies are being built into
+ small hand held phones. The 5 cm screens on these portable devices
+ do not allow much in the way of visual appeal. The better way to
+ present the HTML is through the ACSS.
+ <li>Use by persons who have disabilities -- this is perfect for the
+ person with a disability -- those who cannot see the pages clearly
+ can take advantage of the audio formatting.
+ </ul>
+ <p>
+ We can expect that for-profit forces will begin to be active in
+ this arena. These forces will benefit the print disabled community
+ indirectly.
+ 
+ 
+ 
+ <h1>Web Accessibility Initiative (WAI)</h1>
+ 
+ <p>
+ The Web as we know it right now presents many barriers to the blind
+ or print disabled user. The list is quite extensive, but there is
+ hope. On April 6, 1997 immediately prior to the Sixth Annual World
+ Wide Web Conference held this year in San Francisco, invited guests
+ were present to witness the launching of the Web Accessibility
+ Initiative (WAI). The WAI is an international activity of the W3C
+ with the goals of making the web usable by all persons the world
+ over. The two major components of the WAI are:
+ </p>
+ <ol>
+ <li>Resolve technical issues associated with the HTML
+ specification.
+ <li>Educate content creators concerning the correct use of HTML to
+ ensure accessibility.
+ </ol>
+ 
+ <p>
+ Nice, France in June saw the first formal meeting of the WAI. The
+ second was held in Boston, USA in August of this year.
+ Representatives from ICADD are participating in the WAI  activity.
+ Currently HTML is more powerful and much more common than the early
+ ICADD application and use of HTML is encouraged in favor of the
+ older ICADD application of SGML. The working groups of the WAI are
+ still getting organized and the staff has yet to be hired. A
+ working group  has been discussing issues on the W3C list server.
+ Funding for the project is coming from the US government and from
+ the Internet community. Funding is expected to be provided by
+ European sources for activities in Europe. You can learn more by
+ visiting the W3C's home pages.
+ 
+ 
+ 
+ <h1>Some technological developments you should know about</h1>
+ <p>
+ We all know about the use of the Graphical User Interface (GUI) in
+ the world today. You probably know that this development has caused
+ great concern in the blind community. Now more people are using the
+ new operating systems and newer computers. Advances in hardware and
+ software make progress easier. Two developments should be mentioned
+ here that are direct benefits of the newer operating systems. While
+ the GUI presents some barriers, they also present opportunities. 
+ 
+ <h2>Advancement in Synthetic Speech</h2>
+ 
+ <p>
+ We are just about ready to start using &quot;software synthesizers.&quot; The
+ older hardware synthesizers will soon become obsolete. Using a
+ Sound Blaster compatible sound card, the new generation of software
+ synthesizers will dominate the market in a few years. Since these
+ synthesizers are software based, we can expect improvements over
+ time in the same way that other software evolves. One of the new
+ techniques for creating these new synthesizers is to create a
+ database of possible human sounds in a particular language. The
+ software then reconstructs the words and sentences from this
+ database of recorded human sounds. The fundamental mechanism for
+ producing the sound is from an original recording of a real human
+ being. We can expect major improvements in synthetic speech from
+ this development. The software will not run on older, slower
+ computers and requires modern 32-bit or higher operating systems.
+ This technological development was not practical until this time in
+ hardware and software evolution.
+ 
+ 
+ <h2>Using Wireless Communication to Connect to the Internet</h2>
+ 
+ <p>
+ We've seen cellular phones develop over the past ten years. This
+ technology depends on a line-of-sight transmitter. This limitation
+ and the low bandwidth cellular technology affords will be overcome
+ in the next generation of wireless technology.
+ 
+ <p>
+ Low Earth Orbit (LEO) satellites are currently being deployed.
+ These communication satellites will allow wireless communication
+ from any mountain peak or valley on any continent on earth. The
+ number of LEO satellites being placed in non-geosynchronous orbit 
+ ensures that there will be adequate throughput for everybody's
+ communication needs. This means that it will be possible in a few
+ years to connect to the Internet with a phone no larger than a
+ cellular phone from anywhere on earth. Think about the impact this
+ is going to have on our modern society. What a wonderful
+ opportunity for people with disabilities:
+ 
+ <ul>
+ <li>if the information on the internet is accessible.
+ <li>if software develops for persons with disabilities.
+ <li>if the hardware and software can be placed in the hands of
+ persons with disabilities.
+ <li>if training is provided to use the new technologies.
+ <li>if there is sufficient funding to use the new wireless
+ technology.
+ </ul>
+ 
+ <h1>Using HTML for text and structuring audio recordings</h1>
+ 
+ <p>
+ 
+ HTML, if created properly, can be perfectly accessible to persons
+ with all types of disabilities. The information can be delivered
+ through the Internet, on a disk, or on a CD-ROM. The same browsers
+ can be used for presenting the information from all three types of
+ media. The developing multimedia specifications can be used to
+ deliver human audio recordings, or text, or combinations of the
+ two. So, HTML will support all the types of functions libraries for
+ the blind and print disabled persons require. Now the issue is how
+ to produce the information.
+ 
+ 
+ <p>
+ When producing HTML documents specifically for persons with
+ disabilities, it is best to use very simple HTML tags. All the
+ fancy formatting and fancy animations you find on many web sites
+ should not be used. Keep it very straight and simple. Remember the
+ browser does the formatting for you -- all you need to do is markup
+ the document with appropriate tags.
+ 
+ 
+ <h2>Current thinking on How Books Will be Presented in HTML</h2>
+ 
+ <p>
+ The design of novels, textbooks, dictionaries, cookery books, and
+ other reference materials should be considered as work in progress.
+ It is possible to present the information using current technology,
+ but there are components that still need to be developed. For
+ example, a dictionary in HTML can be produced, but it is not easy
+ to go to a certain word using current search software. This type of
+ search software will need to be developed. The design of basic
+ books would look like the following:
+ 
+ <ol>
+ <li>The book would be in valid HTML.
+ <li>The book would be a collection of separate, but related HTML
+ files.
+ <li>Each chapter would be in a separate file.
+ <li>Front matter, the index and other logical components of the
+ book would be in separate HTML files.
+ <li>A detailed table of contents file would be used for navigation.
+ This file would have links to all parts of the book.  In other
+ words, each head and sub-heading would have a link from the table
+ of contents to that heading.
+ <li>There may be a simplified table of contents file in addition to
+ the detailed table of contents. Links would be provided from one
+ version of the table of contents to the other.
+ <li>There should be links to the previous and next chapter and back
+ to the table of contents in each chapter.
+ <li>W3C conventions should be used to represent page numbers.
+ <li>W3C conventions should be used to provide descriptions of
+ graphics.
+ <li>Use standard HTML structural tags to identify elements in the
+ printed book. For example, Headings &lt;h1&gt;, sub-headings
+ &lt;h2&gt;, &lt;h3&gt;, etc, paragraphs &lt;p&gt;, ordered lists
+ &lt;ol&gt;, unordered lists &lt;ul&gt;, list items &lt;li&gt;,
+ dictionary terms &lt;dt&gt;, dictionary definitions &lt;dd&gt;. The
+ full list can be examined by visiting the W3C web site. The
+ specification can be read there. Please note that most books on
+ HTML are oriented toward highly visual web pages.
+ </ol>
+ 
+ <p>
+ As stated, this is work in progress. I hope that some serious
+ guidelines will be produced explicitly for libraries for the blind
+ and print disabled that will address their production needs. It is
+ unclear if the WAI will take responsibility for this, or if the 
+ DAISY Consortium will produce such a document. It is clear that
+ good guidelines need to be produced for our use.
+ 
+ 
+ <h2>Adding digital audio recordings to HTML content</h2>
+ 
+ <p>
+ Currently the W3C is working on a multimedia specification. This is
+ intended to allow video, audio, graphics and text to be
+ simultaneously presented on the web. For our purposes, the text and
+ audio components are of interest. Using the specification allows
+ HTML and supporting browsers to play audio recordings over the
+ Internet or from a CD-ROM. The DAISY Consortium is well aware of
+ these developments and is involved in the WAI and the W3C's
+ activities.
+ 
+ 
+ <p>
+ In it's simplest form, all that needs to be produced in HTML is the
+ detailed table of contents. This HTML file points to the sound
+ files on the Internet or on the CD-ROM that are played. For
+ example, a book with ten chapters, front matter and an index would
+ have 12 sound files. The table of contents file in HTML would point
+ to the appropriate sound file. The sub-headings in the table of
+ contents would point to the sound file at a time offset in the
+ sound file. In this very simple way, a digital audio book will be
+ created.
+ 
+ 
+ <p>
+ Although this is work in progress, it is reasonable to expect that
+ the software tools will be available in the next year to produce
+ books in this way. More sophisticated books can be produced as
+ well. Books could contain full text and full human recordings. The
+ developing software will support this product as well. Books of
+ such sophistication may be the exception in a normal production
+ environment. These books will require more time to produce than a
+ book that has just the text or just the digital audio recording. We
+ may find that books combine the two in a logical division of
+ content. The information that lends itself to human narration would
+ be provided with a human digital audio recording and the
+ information that lends itself to synthetic speech would be provided
+ in HTML text. It will be possible to mix the two media together in
+ one hybrid book.
+ 
+ 
+ <h1>Conclusions</h1>
+ 
+ <p>
+ The Internet and the World Wide Web are the most important
+ information technologies since the invention of the printing press.
+ Enormous amounts of information are available already and much more
+ will be available in the future. If a person does not have access
+ to this wealth of information, they will be at a huge disadvantage
+ in their educational, employment, and recreational endeavors. I
+ would like to see organizations serving persons with disabilities
+ work to ensure the accessibility of the Internet. Information that
+ these organizations produce could be made available directly
+ through the Internet. RFB&amp;D feels that it is our responsibility to
+ assist our members to gain access to the Internet and if the
+ information needed is not accessible directly, then it is our
+ responsibility to do all we can to make that needed information
+ available to them. 
+ 
+ 
+ </body>
+ </html>
